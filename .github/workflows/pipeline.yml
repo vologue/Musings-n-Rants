@@ -1,0 +1,16 @@
+name: Build & deploy
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.0']
+    steps:
+      - uses: ruby/setup-ruby@v3.0
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+      - uses: actions/checkout@v2
+      - run: bundle exec jekyll build
+      - run: ls
