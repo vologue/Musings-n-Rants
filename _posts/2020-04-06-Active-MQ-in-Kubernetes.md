@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deploying Active-MQ in a Kubernetes cluster"
-date:   2021-10-15 17:07:40 +0530
+date:   2020-04-06 17:07:40 +0530
 categories: kubernetes
 ---
 [Active-MQ][Active-MQ] or apache-amq is a convenient little server which is often used to temporarily store and send messages. In essence, its a message broker which can work with multiple protocols and hence can cater to a larger selection of devices.
@@ -19,7 +19,7 @@ Which according to my standards is super expensive. So I decided shift my Amazon
 In this article, we will be setting up a deployment for Active-MQ. we will also mount the dashboard credentials as a secret (because duh). we will also be creating a service and ingress.
 
 ### Step 1: Building the image with docker
-For the purpose of this article lets use "openjdk:8-jre-alpine"[https://hub.docker.com/_/openjdk] as the base image.
+For the purpose of this article lets use "[openjdk:8-jre-alpine][openjdk:8-jre-alpine]" as the base image.
 
 - OpenJDK - because active-mq requires java and this saves us the extra step of installing it in ubuntu or alpine base image. 
 
@@ -134,7 +134,7 @@ This will create a deployment with one pod with custom credentials.
 kubectl create -f deployment.yaml -n active-mq
 ```
 
-#### Service
+## Service
 In this step, we will be creating the yaml for active-mq service and deploying it. In the service.yaml file we must be careful while declaring the ports and only open ports which are being used and name them accordingly. My yaml file looks a little like:
 
 ```yaml
@@ -178,11 +178,11 @@ To deploy the service to Kubernetes cluster:
 kubectl create -f service.yaml -n active-mq
 ```
 
-![kubernetes dashboard](/assets/2021-10-15-Active-MQ-in-Kubernetes/k8s-dashboard.png)
+![kubernetes dashboard](/assets/2020-04-06-Active-MQ-in-Kubernetes/k8s-dashboard.png)
 
 This will deploy the service. Since the service is of the type load-balancer, this will expose it to the public at the host-name of the load-balancer set up by your cloud provider. The dashboard and the rest api is exposed on the port 8161. dashboard at '/' and rest api at '/api/message' for more information read the official documentation.
 
-![MQ dashboard](/assets/2021-10-15-Active-MQ-in-Kubernetes/mq-dashboard.png)
+![MQ dashboard](/assets/2020-04-06-Active-MQ-in-Kubernetes/mq-dashboard.png)
 
 If in case you don't want the service to be exposed on a separate load-balancer, then you can set the type to ClusterIP and create an ingress to route the traffic accordingly. However, you can access the dashboard using the port-forward command.
 
@@ -192,7 +192,7 @@ kubectl port-forward svc/active-mq 8161:8161 -n active-mq
 
 Now the dashboard will be available at [http://localhost:8161][localhost].
 
-#### Cleanup
+### Cleanup
 
 To delete the deployment simply delete the namespace. This will remove everything in that namespace (along with Active-mq deployment)
 
@@ -202,3 +202,4 @@ kubectl delete namespace active-mq
 
 [Active-MQ]: https://activemq.apache.org/
 [localhost]: http://localhost:8161
+[openjdk:8-jre-alpine]: https://hub.docker.com/_/openjdk
