@@ -7,7 +7,7 @@ jobs:
       matrix:
         ruby-version: ['3.0']
     steps:
-      - uses: ruby/setup-ruby@v3.0
+      - uses: ruby/setup-ruby@v1.9.0
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
