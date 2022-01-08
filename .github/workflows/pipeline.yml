@@ -22,6 +22,8 @@ jobs:
         uses: unfor19/install-aws-cli-action@master
         with:
           version: "2"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - run: |
           aws sts get-caller-identity 
           # aws s3 cp --acl public-read _site/. s3://blog.vologue.dev/ --recursive --cache-control 0
