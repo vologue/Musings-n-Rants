@@ -5,11 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['3.0']
+        ruby: ['2.5', '2.6', '2.7', '3.0']
+        allow-failures: [false]
+        include:
+          - ruby: head
+            allow-failures: true
     steps:
-      - uses: ruby/setup-ruby@v1.9.0
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
+      # - uses: ruby/setup-ruby@v1.9.0
+      #   with:
+      #     ruby-version: ${{ matrix.ruby-version }}
           # bundler-cache: true
       - uses: actions/checkout@v2
       - run: bundle install
