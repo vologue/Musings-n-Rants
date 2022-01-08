@@ -1,0 +1,33 @@
+name: Build & deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      id-token: write
+    strategy:
+      matrix:
+        ruby: ['3.0']
+        allow-failures: [false]
+        include:
+          - ruby: head
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+      - run: |
+          bundle install
+          bundle exec jekyll build
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ap-south-1
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          role-session-name: deploy-blog
+          role-duration-seconds: 120
+      - run: |
+          aws s3 cp --acl public-read _site/. s3://blog.vologue.dev/ --recursive --cache-control 0
