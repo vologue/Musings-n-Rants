@@ -1,7 +1,7 @@
 name: Build & deploy
 on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -23,4 +23,5 @@ jobs:
         with:
           version: "2"
       - run: |
-          aws --version
+          aws sts get-caller-identity 
+          # aws s3 cp --acl public-read _site/. s3://blog.vologue.dev/ --recursive --cache-control 0
