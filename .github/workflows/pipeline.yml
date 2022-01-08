@@ -11,9 +11,9 @@ jobs:
           - ruby: head
             allow-failures: true
     steps:
-      # - uses: ruby/setup-ruby@v1.9.0
-      #   with:
-      #     ruby-version: ${{ matrix.ruby-version }}
+      - uses: ruby/setup-ruby@v1.9.0
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
           # bundler-cache: true
       - uses: actions/checkout@v2
       - run: bundle install
