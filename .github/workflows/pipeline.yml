@@ -11,10 +11,11 @@ jobs:
           - ruby: head
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-ruby@v1
+      - name: Build
+        uses: actions/setup-ruby@v1
         with:
           ruby-version: '3.0'
-      - run: |
+        run: |
           bundle install
           bundle exec jekyll build
           ls
