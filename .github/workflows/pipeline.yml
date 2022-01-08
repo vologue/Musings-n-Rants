@@ -1,5 +1,8 @@
 name: Build & deploy
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -18,14 +21,13 @@ jobs:
         with:
           ruby-version: '3.0'
       - run: |
-          # bundle install
-          # bundle exec jekyll build
-          ls
+          bundle install
+          bundle exec jekyll build
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: ap-south-1
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           role-session-name: deploy-blog
+          role-duration-seconds: 120
       - run: |
-          aws sts get-caller-identity 
           aws s3 cp --acl public-read _site/. s3://blog.vologue.dev/ --recursive --cache-control 0
