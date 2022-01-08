@@ -15,15 +15,12 @@ jobs:
         with:
           ruby-version: '3.0'
       - run: |
-          bundle install
-          bundle exec jekyll build
+          # bundle install
+          # bundle exec jekyll build
           ls
-      - name: install aws cli
+      - id: install-aws-cli
+        uses: unfor19/install-aws-cli-action@master
+        with:
+          version: "2"
         run: |
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
-      - name: deploy
-        run: |
-          which aws
           aws --version
