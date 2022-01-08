@@ -119,12 +119,12 @@ template:
             cpu: 400m
       volumeMounts:
       - name: active-creds
-         mountPath: /home/alpine/apache-activemq-5.15.10/conf/jetty-realm.properties
-         subPath: jetty-realm.properties
+        mountPath: /home/alpine/apache-activemq-5.15.10/conf/jetty-realm.properties
+        subPath: jetty-realm.properties
    volumes:
    - name: active-creds
-      secret:
-      secretName: creds
+     secret:
+       secretName: creds
    restartPolicy: Always
 ```	
 
