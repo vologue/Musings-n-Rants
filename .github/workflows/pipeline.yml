@@ -3,6 +3,9 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      id-token: write
     strategy:
       matrix:
         ruby: ['3.0']
