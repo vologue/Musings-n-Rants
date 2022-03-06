@@ -24,7 +24,7 @@ This is the end.
 Its been 2 weeks since I decided I will be leaving the company for good.
 
 In these past 2 weeks I have given 2 interviews and absolutely bombed them both.
-Also got a minor surgery and am too broke to buy myself something nice. Russia has invaded Ukraine and people are dying. I wish for the violence to end soon.
+Also got a minor surgery and am too broke to buy myself something nice. Russia has invaded Ukraine and people are dying. I wish for the violence to end soon :(.
 
 but in the midst of all the bad news 
 - I have found a way to take on extra work at work.
