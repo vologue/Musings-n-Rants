@@ -36,3 +36,19 @@ I have also shortlisted my list of colleges I'll apply to.
 It also looks like I need to start skilling up again.
 
 Things are not looking up yet but hopefully they will soon.
+
+## 20th March 2022
+
+I'm changing jobs. As of 4th April 2022 I'll be joining Moveworks. Everyone close to me doubts this descision. While it is normal for my dad question my sanity, I'm doubtful of the change myself.
+Is it the right move? Am I getting scammed? What kinda resignation letter do I write?
+"Hi, I don't like how little work I do here so toodles."??
+
+Seems like Russia made a few logistical mistakes in Ukraine, the war is still going on. But my country made an international transaction that was not in dollars, which is good news I guess. I don't understand the economics of it, but just proud of what it symbolizes. 
+
+Anyway seems like my plan to leave the country is going to be postponed.
+
+Admist the confusion I met up with Aashna. It was fun.
+A lot of my friends are coming back to bangalore so next month is going to be fun too.
+
+Still waiting for things to look up.
+
