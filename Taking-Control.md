@@ -47,8 +47,20 @@ Seems like Russia made a few logistical mistakes in Ukraine, the war is still go
 
 Anyway seems like my plan to leave the country is going to be postponed.
 
-Admist the confusion I met up with Aashna. It was fun.
+Admist the confusion I met up with a friend. It was fun.
 A lot of my friends are coming back to bangalore so next month is going to be fun too.
 
 Still waiting for things to look up.
+
+## 25th June 2022
+
+Its been a while since my last entry. Work has been amazing.
+My parents be asking me if I want to go for higher studies or not like I'm supposed to ansewer to that yet.
+
+Learnt a little bit about writing a controller. Recently realised how bad I am at LLD.
+But its okay, now that I know I can work on it.
+
+Learnt a new song and got good reviews on it.
+
+tldr: Life is like fine wine right now. Its super kadwa and you need to develop a taste for it. but once you do, you become an at risk alcoholic but its also fun.
 
