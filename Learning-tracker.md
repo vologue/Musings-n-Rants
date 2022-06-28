@@ -21,6 +21,11 @@ permalink: /learnings-tracker/
 - [ ] Running faster for longer.
 
 # Progress
+
+## 27th June 2022
+- Ranjit did a talk about back-progagtion was interesting.
+
+Too tired to learn anything else today.
 ## 26th June 2022
 - Learnt a little bit more about domain driven design.
 - Will start setting smart goals to greow faster.
