@@ -22,7 +22,7 @@ permalink: /learnings-tracker/
 
 # Progress
 
-## 27th June 2022
+## 28th June 2022
 - Ranjit did a talk about back-progagtion was interesting.
 
 Too tired to learn anything else today.
