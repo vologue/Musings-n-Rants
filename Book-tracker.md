@@ -6,10 +6,22 @@ permalink: /books-tracker/
 
 ## Self help books and have I read them yet
 
-#### The turn of the Tortoise
+#### Mindset
 Status: Reading
+Medium: Paper Back cover
+Would I recommmend? I don't know yet.
+
+
+#### The Psychology of Money
+Status: Finished
+Medium: Paper Back cover
+Would I recommmend? Yes.
+
+
+#### The turn of the Tortoise
+Status: Finished
 Medium: Hard cover
-Would I recommmend? Don't know yet.
+Would I recommmend? Yes.
 
 
 #### Linchpin -Seth Godwin

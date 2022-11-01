@@ -8,7 +8,7 @@ permalink: /learnings-tracker/
 
 ## Technologies
 
-- [ ] Bazel - Sounds cool may not follow through.
+- [x] Bazel - Sounds cool may not follow through.
 - [ ] Desgin Patterns - To be a better developer.
 - [ ] gRPC & protocol buffers - Should have learnt this in college :').
 - [ ] Kafka
