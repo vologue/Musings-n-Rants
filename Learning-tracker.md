@@ -27,7 +27,7 @@ permalink: /learnings-tracker/
 
 ## 27th June 2022
 
-- Ranjit did a talk about back-progagtion was interesting.
+- Riley at office did a talk about back-progagtion was interesting.
 
 Too tired to learn anything else today.
 

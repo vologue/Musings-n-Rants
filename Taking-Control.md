@@ -30,7 +30,7 @@ but in the midst of all the bad news
 - I have found a way to take on extra work at work.
 - Kaamchore's backend is live.
 - I met Nush and she really liked her birthday gift.
-- Spent an entire day with Ritika.
+- Spent an entire day with R.
 
 I have also shortlisted my list of colleges I'll apply to.
 It also looks like I need to start skilling up again.
@@ -64,3 +64,13 @@ Learnt a new song and got good reviews on it.
 
 tldr: Life is like fine wine right now. Its super kadwa and you need to develop a taste for it. but once you do, you become an at risk alcoholic but its also fun.
 
+
+## 29th Jan 2022
+
+Writing again after a long hiatus. January 2023 came like a thunderstorm leaving destruction in its wake. Still better than January 2019 I would wager. Now that I think about it, most major tragedies in my life occur in this month. 
+ 
+[1]"I now declare, I will die in Janurary. I do not know which year at this point of time but a certain Januray cometh and I goeth"
+
+I have now started a diet and impulse bought a watch which tells me to walk every 40 mins (THE AUDACITY). Will try to reach 15% body fat soon. Work has been relentless but the long weekend was a godsend. Slowly making progress in Piano. I also started a Piano account xD. Do not ask me the handle I will not be disclosing that piece of information right now. I want it to grow organically and I already have 3 organic followers which is already amazing to me.
+
+[1]: It came to me while thinking thoughts.
