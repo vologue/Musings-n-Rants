@@ -17,11 +17,11 @@ jobs:
           - ruby: head
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
+          bundler-cache: true
       - run: |
-          bundle install
           bundle exec jekyll build
       - uses: aws-actions/configure-aws-credentials@v1
         with:
