@@ -69,7 +69,7 @@ tldr: Life is like fine wine right now. Its super kadwa and you need to develop 
 
 Writing again after a long hiatus. January 2023 came like a thunderstorm leaving destruction in its wake. Still better than January 2019 I would wager. Now that I think about it, most major tragedies in my life occur in this month. 
  
-(1)```I now declare, I will die in Janurary. I do not know which year at this point of time but a certain Januray cometh and I goeth.```
+(1)```I now declare, I will die in January. I do not know which year at this point of time but a certain January cometh and I goeth.```
 
 I have now started a diet and impulse bought a watch which tells me to walk every 40 mins (THE AUDACITY). Will try to reach 15% body fat soon. Work has been relentless but the long weekend was a godsend. Slowly making progress in Piano. I also started a Piano account xD. Do not ask me the handle I will not be disclosing that piece of information right now. I want it to grow organically and I already have 3 organic followers which is already amazing to me.
 
