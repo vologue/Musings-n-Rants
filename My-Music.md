@@ -10,6 +10,8 @@ I Proudly present my song Night's Solace.
 
 ![Night's Solace Artwork](/assets/artwork.jpg)
 
+<audio src="/assets/nights-solace.mp3" controls preload></audio>
+
 This song is about the joy that comes with acceptance. 
 The acceptance that comes after a long period of pain.
 Or in Millenial: The feeling of being able to say `It is what it is`.
