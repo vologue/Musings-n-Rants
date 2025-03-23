@@ -5,8 +5,6 @@ date:   2025-03-23 17:07:40 +0530
 categories: Python
 ---
 
-# Mocking payloads in python AIOHTTP
-
 The Python AIOHTTP library provides an extensive testing library. However, writing unit tests for middlewares and 
 handlers can still be challenging, particularly in cases where middlewares behave differently based on the request's 
 body.
