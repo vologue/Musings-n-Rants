@@ -1,12 +1,14 @@
 
 title: Vologue's Blog
-# email: raghav.sp98@gmail.com
 description: ""
 baseurl: "" 
 url: "https://blog.vologue.dev" 
 twitter_username: _vologue
 github_username:  vologue
+email: raghav.sp98@gmail.com
 
+include:
+  - favicon.ico
 show_excerpts: false
 # Build settings
 theme: minima
@@ -14,10 +16,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 minima:
-  skin: dark
+  skin: classic
+  nav_pages:
+  - my_music.md
   social_links:
     twitter: _vologue
     github: vologue
-author:
-  name: vologue
-  email: "raghav.sp98@gmail.com"
+#author:
+#  name: vologue
+#  email: raghav.sp98@gmail.com

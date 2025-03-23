@@ -11,7 +11,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        ruby: ['3.0']
+        ruby: ['3.1']
         allow-failures: [false]
         include:
           - ruby: head
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: '3.1'
           bundler-cache: true
       - run: |
           bundle exec jekyll build

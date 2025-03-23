@@ -21,34 +21,33 @@ effectively.
 Following is the function definition from the [aiohttp repo][aio-http-repo]
 
 ```python
-    def make_mocked_request(
-        method: str,
-        path: str,
-        headers: Optional[LooseHeaders] = None,
-        *,
-        match_info: Optional[Dict[str, str]] = None,
-        version: HttpVersion = HttpVersion(1, 1),
-        closing: bool = False,
-        app: Optional[Application] = None,
-        writer: Optional[AbstractStreamWriter] = None,
-        protocol: Optional[RequestHandler[Request]] = None,
-        transport: Optional[asyncio.Transport] = None,
-        payload: StreamReader = EMPTY_PAYLOAD,
-        sslcontext: Optional[SSLContext] = None,
-        client_max_size: int = 1024**2,
-        loop: Any = ...,
-    ) -> Request:
+def make_mocked_request(
+    method: str,
+    path: str,
+    headers: Optional[LooseHeaders] = None,
+    *,
+    match_info: Optional[Dict[str, str]] = None,
+    version: HttpVersion = HttpVersion(1, 1),
+    closing: bool = False,
+    app: Optional[Application] = None,
+    writer: Optional[AbstractStreamWriter] = None,
+    protocol: Optional[RequestHandler[Request]] = None,
+    transport: Optional[asyncio.Transport] = None,
+    payload: StreamReader = EMPTY_PAYLOAD,
+    sslcontext: Optional[SSLContext] = None,
+    client_max_size: int = 1024**2,
+    loop: Any = ...,
+) -> Request:
         ...
 ```
 
 From this we see the `make_mocked_request` function takes a parameter of type `aiohttp.streams.StreamReader` and by default is set to the value 
 `_EMPTY_PAYLOAD` which intern is nothing but:
 
-In older versions, it takes a parameter of type `Any` and by default is set to the value 
-`sentinel` which in turn is nothing but:
-```python
-sentinel = enum.Enum(value="_SENTINEL", names="sentinel").sentinel
-```
+> In older versions, it takes a parameter of type `Any` and by default is set to the value`sentinel` which in turn is nothing but:
+> ```python 
+> sentinel = enum.Enum(value="_SENTINEL", names="sentinel").sentinel
+> ```
 We come to the same StreamReader conclusion in the older versions by seeing the `BaseRequest` implementation. 
 
 This tells us that all we need is to pass a StreamReader object that will return the data to be mocked when the `read` 
