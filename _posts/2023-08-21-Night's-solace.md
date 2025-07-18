@@ -2,8 +2,9 @@
 layout: post
 title:  "Night's Solace"
 date: 2023-08-21 17:07:40 +0530
-description: I wrote my first piece of music xD
-categories: [ music ]
+categories: [ "music" ]
+tags: ["my-music"]
+related_posts: false
 ---
 
 It has been a childhood dream of mine to make a song and it has finally happened.

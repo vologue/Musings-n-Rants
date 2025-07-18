@@ -2,7 +2,8 @@
 layout: post
 title: "The All-Mighty Bazel"
 date: 2023-09-18 17:07:40 +0530
-categories: Bazel
+tags: [ bazel, build ]
+categories: ["engineering"]
 ---
 
 Bazel is a nifty tool that makes building and testing code extremely easy. One of the major reasons why Bazel is amazing

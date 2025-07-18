@@ -2,7 +2,8 @@
 layout: post
 title: "Deploying Active-MQ in a Kubernetes cluster"
 date: 2020-04-06 17:07:40 +0530
-categories: kubernetes
+tags: [ "kubernetes", "active-mq" ]
+categories: ["engineering"]
 ---
 
 [Active-MQ][Active-MQ] or apache-amq is a convenient little server which is often used to temporarily store and send
