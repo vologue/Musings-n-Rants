@@ -2,7 +2,8 @@
 layout: post
 title:  "Mocking payloads in python AIOHTTP"
 date:   2025-03-23 17:07:40 +0530
-categories: Python
+tags: [ python, code, testing ]
+categories: ["engineering"]
 ---
 
 The Python AIOHTTP library provides an extensive testing library. However, writing unit tests for middlewares and 
