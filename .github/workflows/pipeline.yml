@@ -1,33 +1,45 @@
-name: Build & deploy
+name: Build & Deploy
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       id-token: write
-    strategy:
-      matrix:
-        ruby: ['3.1']
-        allow-failures: [false]
-        include:
-          - ruby: head
+      contents: read
     steps:
-      - uses: actions/checkout@master
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout source
+        uses: actions/checkout@master
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      - run: |
-          bundle exec jekyll build
-      - uses: aws-actions/configure-aws-credentials@v1
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libffi-dev zlib1g-dev liblzma-dev imagemagick python3 python3-pip
+
+      - name: Install Jupyter
+        run: pip3 install jupyter
+
+      - name: Install Ruby gems
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ap-south-1
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           role-session-name: deploy-blog
           role-duration-seconds: 900
       - run: |
-          aws s3 cp --acl public-read _site/. s3://blog.vologue.dev/ --recursive --cache-control 0
+          aws s3 cp --acl public-read _site/. s3://vologue.dev/ --recursive --cache-control 0
