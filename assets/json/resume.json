@@ -1,0 +1,126 @@
+{
+  "basics": {
+    "name": "S Raghav Pillai",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "raghav.sp98@gmail.com",
+    "url": "https://vologue.dev",
+    "location": {
+      "city": "Bangalore",
+      "country": "India"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "vologue",
+        "url": "https://github.com/vologue"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "s-raghav-pillai",
+        "url": "https://www.linkedin.com/in/s-raghav-pillai/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Moveworks India",
+      "position": "Senior Software Engineer",
+      "url": "https://www.moveworks.com/",
+      "startDate": "2022-04",
+      "endDate": "Present",
+      "summary": "Implemented RBAC on opensearch based on fields of an index, enabling stakeholders to view documents that they are authorised to. Manage the logging, and workflow (temporal) infra."
+    },
+    {
+      "name": "Citrix",
+      "position": "Platform engineer 2",
+      "url": "https://www.citrix.com/",
+      "startDate": "2021-11",
+      "endDate": "2022-04",
+      "summary": "Developed internal services, pipelines and various automation to save time, managed infrastructure, VPN, Users access, and Microservices,"
+    },
+    {
+      "name": "Zolostays",
+      "position": "Platform engineer",
+      "url": "https://zolostays.com/",
+      "startDate": "2020-06",
+      "endDate": "2021-10",
+      "summary": "Developed internal services, pipelines and various automation to save time, managed infrastructure, VPN, Users access, and Microservices,"
+    }
+  ],
+  "education": [
+    {
+      "institution": "SRM Institute of Science And Technology",
+      "location": "Chennai, India",
+      "url": "https://www.srmist.edu.in/",
+      "area": "Computer Science and Engineering",
+      "studyType": "Computer Science and Engineering",
+      "startDate": "2016-06-18",
+      "endDate": "2020-05-30",
+      "CGPA": "8.13"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Language",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "GoLang"
+      ]
+    },
+    {
+      "name": "Build Systems",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Bazel"
+      ]
+    },
+    {
+      "name": "Cloud Providers",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "AWS"
+      ]
+    },
+    {
+      "name": "Container Orchestration",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Misc",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "ProtocolBuffers",
+        "GRPC",
+        "REST",
+        "Kafka",
+        "OpenSearch",
+        "Postgresql"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Distributed systems",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Music",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Running",
+      "icon": "fa-solid fa-tag"
+    }
+  ]
+}
