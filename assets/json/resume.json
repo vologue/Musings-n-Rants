@@ -3,7 +3,7 @@
     "name": "S Raghav Pillai",
     "label": "Software Engineer",
     "image": "",
-    "email": "raghav.sp98@gmail.com",
+    "email": "raghav.pillai@vologue.dev",
     "url": "https://vologue.dev",
     "location": {
       "city": "Bangalore",
@@ -25,27 +25,64 @@
   "work": [
     {
       "name": "Moveworks India",
-      "position": "Senior Software Engineer",
+      "position": "Senior Software Engineer I",
       "url": "https://www.moveworks.com/",
-      "startDate": "2022-04",
+      "startDate": "2023-03",
       "endDate": "Present",
-      "summary": "Implemented RBAC on opensearch based on fields of an index, enabling stakeholders to view documents that they are authorised to. Manage the logging, and workflow (temporal) infra."
+      "summary": "Built internal frameworks and developer tooling to reduce DevOps toil and improve reliability.",
+      "highlights": [
+        "Designed and rolled out ArgoWorkflow framework enabling developers to write, test, and deploy workflows in Python without DevOps involvement – widely adopted across the org.",
+        "Implemented RBAC for OpenSearch with document-level field-based authorization.",
+        "Developed automatic infra health check system for dependencies like PostgreSQL, Redis, Kafka, improving reliability.",
+        "Owned Istio and logging infrastructure.",
+        "Set up Bazel for k8s manifests repo with pre-merge validation, reducing outages from manual errors."
+      ]
     },
     {
-      "name": "Citrix",
-      "position": "Platform engineer 2",
+      "name": "Moveworks India",
+      "position": "Software Engineer I",
+      "url": "https://www.moveworks.com/",
+      "startDate": "2022-04",
+      "endDate": "2023-03",
+      "summary": "Managed cloud infrastructure, CI/CD pipelines, and developer productivity tooling.",
+      "highlights": [
+        "Migrated from monolithic deploy pipeline to service-specific pipelines, reducing deployment time from 2+ hours to <10 minutes.",
+        "Implemented automated deep health checks for all microservices.",
+        "Built EU region infrastructure to meet GDPR compliance requirements."
+      ]
+    },
+    {
+      "name": "Citrix R&D India",
+      "position": "Platform Engineer II",
       "url": "https://www.citrix.com/",
       "startDate": "2021-11",
       "endDate": "2022-04",
-      "summary": "Developed internal services, pipelines and various automation to save time, managed infrastructure, VPN, Users access, and Microservices,"
+      "summary": "Built and maintained internal services on Azure.",
+      "highlights": [
+        "Developed automation to publish customer IP ranges for whitelisting.",
+        "Maintained internal developer services and CI/CD pipelines."
+      ]
     },
     {
       "name": "Zolostays",
-      "position": "Platform engineer",
+      "position": "Platform Engineer II",
       "url": "https://zolostays.com/",
-      "startDate": "2020-06",
+      "startDate": "2020-07",
       "endDate": "2021-10",
-      "summary": "Developed internal services, pipelines and various automation to save time, managed infrastructure, VPN, Users access, and Microservices,"
+      "summary": "Managed infra, access, and microservices deployments while building automation to improve efficiency.",
+      "highlights": [
+        "Launched and managed Zolo’s bug bounty program.",
+        "Performed cost optimization saving $2000+ per month.",
+        "Built pipelines and automation frameworks to save engineering hours."
+      ]
+    },
+    {
+      "name": "Zolostays",
+      "position": "Platform Engineering Intern",
+      "url": "https://zolostays.com/",
+      "startDate": "2020-01",
+      "endDate": "2020-06",
+      "summary": "Worked on microservices infra, deployments, and monitoring."
     }
   ],
   "education": [
@@ -58,6 +95,49 @@
       "startDate": "2016-06-18",
       "endDate": "2020-05-30",
       "CGPA": "8.13"
+    }
+  ],
+  "projects": [
+    {
+      "name": "ArgoWorkflow Framework",
+      "startDate": "2024-01",
+      "endDate": "2024-06",
+      "description": "Abstraction on top of Python Hera enabling developers to write cross-env workflows without DevOps help."
+    },
+    {
+      "name": "Manifest Generation Framework",
+      "url": "#",
+      "startDate": "2023-03",
+      "endDate": "2023-06",
+      "description": "Bazel + Python system to auto-generate Kubernetes manifests from parameters."
+    },
+    {
+      "name": "zOps",
+      "url": "#",
+      "startDate": "2020-07",
+      "endDate": "2020-08",
+      "description": "Web console to manage ConfigMaps and Secrets with custom RBAC integration."
+    },
+    {
+      "name": "Ragnarok (Cluster Shutdown)",
+      "url": "#",
+      "startDate": "2020-03",
+      "endDate": "2020-04",
+      "description": "Serverless automation to turn off staging clusters during off-hours, reducing infra costs."
+    },
+    {
+      "name": "PinNinja",
+      "startDate": "2019-06",
+      "endDate": "2019-06",
+      "url": "https://github.com/securelayer7/PinNinja",
+      "description": "Arduino script to auto-identify UART pins."
+    },
+    {
+      "name": "Rubber Ducky on Arduino",
+      "startDate": "2017-03",
+      "endDate": "2017-03",
+      "url": "https://github.com/vologue/Rubber-ducky-using-arduino-leonardo-pro-micro",
+      "description": "Arduino script for keystroke injection to simulate Rubber Ducky attacks."
     }
   ],
   "skills": [
