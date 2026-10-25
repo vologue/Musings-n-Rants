@@ -2,8 +2,8 @@
 layout: post
 title:  "The great personal tragedy that is Claude"
 date:   2026-10-17 15:00:40 +0530
-tags: [ python, code, testing ]
-categories: ["engineering", "rant"]
+tags: [ engineering ]
+categories: ["engineering"]
 ---
 A few years ago, if someone had told me there would be this cool CLI tool to which you can not only talk like a normal person, but it can come up with solutions to your problems and implement them. I wouldn't have just not believed them; my mind would have been completely blown, because, let's face it, Claude/Codex, etc., are generational tools. They are the worst they will ever be right now, and right now they are better than what I want them to be.
 
